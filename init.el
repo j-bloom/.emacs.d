@@ -29,6 +29,9 @@
       backup-by-copying t
       create-lockfiles nil)
 
+(set-frame-parameter nil 'alpha-background 75)
+(add-to-list 'default-frame-alist '(alpha-background . 75))
+
 ;; NOTE: The first time you load your configuration on a new machine, you'll
 ;; need to run the following command interactively so that mode line icons
 ;; display correctly:
