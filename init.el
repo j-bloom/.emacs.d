@@ -42,8 +42,8 @@
   :config
   (exec-path-from-shell-initialize))
 
-(use-package smartparens
-  :hook (prog-mode . smartparens-mode))
+;(use-package smartparens
+;  :hook (prog-mode . smartparens-mode))
 
 ;;init packages
 (load "~/.emacs.d/init-packages.el")
@@ -59,6 +59,7 @@
 (load "~/.emacs.d/init-completion.el")
 (load "~/.emacs.d/lsp/init-lsp.el")
 (load "~/.emacs.d/lsp/init-web-mode.el")
+(load "~/.emacs.d/lsp/init-python.el")
 (load "~/.emacs.d/lsp/init-typescript.el")
 (load "~/.emacs.d/lsp/init-cpp.el")
 (load "~/.emacs.d/lsp/init-go.el")
