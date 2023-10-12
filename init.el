@@ -12,6 +12,7 @@
 
 (column-number-mode)
 (global-display-line-numbers-mode t)
+(setq display-line-numbers-type 'relative)
 
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook
@@ -29,6 +30,7 @@
       backup-by-copying t
       create-lockfiles nil)
 
+;; Transparent background
 (set-frame-parameter nil 'alpha-background 75)
 (add-to-list 'default-frame-alist '(alpha-background . 75))
 
