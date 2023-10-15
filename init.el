@@ -34,6 +34,12 @@
 (set-frame-parameter nil 'alpha-background 75)
 (add-to-list 'default-frame-alist '(alpha-background . 75))
 
+(with-eval-after-load 'image-dired
+  (add-to-list 'image-dired-cmd-create-thumbnail-options "-auto-orient")
+  (add-to-list 'image-dired-cmd-create-temp-image-options "-auto-orient")
+  (add-to-list 'image-dired-cmd-create-standard-thumbnail-options
+               "-auto-orient"))
+
 ;; NOTE: The first time you load your configuration on a new machine, you'll
 ;; need to run the following command interactively so that mode line icons
 ;; display correctly:
@@ -60,6 +66,7 @@
 (load "~/.emacs.d/init-rainbow-delimeters.el")
 (load "~/.emacs.d/init-magit.el")
 (load "~/.emacs.d/init-projectile.el")
+(load "~/.emacs.d/init-dashboard.el")
 ;(load "~/.emacs.d/init-general.el")
 (load "~/.emacs.d/init-completion.el")
 (load "~/.emacs.d/lsp/init-lsp.el")
@@ -80,7 +87,7 @@
  '(evil-overriding-maps nil)
  '(ispell-dictionary nil)
  '(package-selected-packages
-   '(smartparens exec-path-from-shell prettier-js ggtags yasnippet flycheck eglot typescript-mode company web-mode evil-magit magit evil-escape rainbow-delimiters all-the-icons doom-themes doom-modeline counsel ivy use-package)))
+   '(dashboard smartparens exec-path-from-shell prettier-js ggtags yasnippet flycheck eglot typescript-mode company web-mode evil-magit magit evil-escape rainbow-delimiters all-the-icons doom-themes doom-modeline counsel ivy use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
