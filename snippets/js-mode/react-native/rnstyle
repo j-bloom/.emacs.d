@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: React Native Stylesheet
+# key: rnstyle
+# --
+const styles = StyleSheet.create({
+  ${1:first}
+})

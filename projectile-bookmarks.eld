@@ -1,0 +1,1 @@
+("~/Projects/Code/portfolio/" "~/Projects/Code/inventory-auditor/" "~/Projects/Code/CPP/OOP244-MS5/" "~/Projects/Code/react practice/resume-builder/" "~/Projects/Code/BudgetBuddy/")
